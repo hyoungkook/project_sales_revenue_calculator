@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매출액 계산기</title>
+<link rel="stylesheet" type="text/css" href="홈페이지만들기(북항지사).css">
+</head>
+<body>
+    <section id="wrap">
+        <h1>대주중공업 북항지사</h1>
+            <header>
+                <img class="logo" src="logo.png" alt="대주중공업북항지사">
+                <nav>
+                    <ul>
+                        <li><a href="초기화면.html">홈페이지</a></li>
+                        <li><a href="홈페이지만들기(북항지사).html">매출계산기</a></li>
+                        <li><a href="작업인원현황.html">작업인원현황</a></li>
+                        <li><a href="장비별예산한도.html">장비별예산한도</a></li>
+                    </ul>
+                </nav>
+            </header>
+    </section>
+    <section id="container">            
+    <h2>북항지사 매출 계산기</h2>
+    <hr><br><br>
+    
+    <h3>하역매출액 계산기</h3> <br>
+    
+    하역물량 : <input type = "text" id = "ton" placeholder = "ex)23000" name = ton1 size = 5 onkeyup="if(window.event.keyCode==13){cal()}"> 톤
+    <button onclick="cal()">제출</button> <br><br>
+    
+    <p id="print"></p> 
+    <br><br>
+    
+    <h3>운송매출액 계산기</h3> <br>
+    
+    운송물량 : <input type = "text" id = "ton2" placeholder = "ex)23000" name = ton2 size = 5 onkeyup="if(window.event.keyCode==13){cal2()}"> 톤
+    <button onclick="cal2()">제출</button> <br><br>
+    
+    <p id="print2"></p> 
+
+    </section>
+            <footer>
+                인천광역시 동구 송현동 177<br>현대제철 북항 1문 대주중공업(주)<br> 북항지사 TEL (032)760-3261 <br> FAX (032)760-3263
+            </footer>
+    
+<script type="text/javascript" src="홈페이지만들기(북항지사).js"></script>
+
+</body>
+</html>
